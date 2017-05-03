@@ -1,28 +1,12 @@
 # Phaser ES6 Boilerplate
-This repository provides a stylish boilerplate for using Phaser with ES6!
+This is a conversion of the basic getting started phaser tutorial into ES6 Javascript using the phaser-ES6-boilerplate by nerdenough to both familiarize myself with javascript classes and how they are used to create phaser game states and objects.
 
-After creating my first Phaser game for the Ludum Dare I decided it would be a
-lot faster to have a boilerplate on hand. I looked around for existing Phaser -
-ES6 boilerplates, and while I found a couple of really good ones, I felt they
-didn't quite match my workflow. So I decided to make my own, which is this!
+base boilerplate can be found at https://github.com/nerdenough/phaser-es6-boilerplate
 
 ## Getting Started
 In order to use this boilerplate you will need to have Node.js, npm and gulp
 installed as these will be used to install the required dependencies for
 building the game.
-
-### Installation
-Clone the repository (or download the zip):
-```
-$ git clone https://github.com/nerdenough/phaser-es6-boilerplate.git
-```
-
-Navigate into the project directory and install all the required dependencies
-for the project along with gulp (used to run the build tasks for the game):
-```
-$ npm install -g gulp
-$ npm install
-```
 
 ### Usage
 #### Serving
