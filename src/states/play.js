@@ -1,4 +1,5 @@
 import Player from './../objects/player';
+import Platforms from './../objects/platform';
 var player;
 var platforms;
 var cursors;
@@ -12,13 +13,10 @@ class Play extends Phaser.State {
       this.game.add.sprite(0, 0, 'sky');
 
       //  The platforms group contains the ground and the 2 ledges we can jump on
-      platforms = this.game.add.group();
-
-      //  We will enable physics for any object that is created in this group
-      platforms.enableBody = true;
+      platforms = new Platforms(this.game, undefined, 'platforms', true, true);
 
       // Here we create the ground.
-      var ground = platforms.create(0, this.game.world.height - 64, 'ground');
+      let ground = platforms.create(0, this.game.world.height - 64, 'ground');
 
       //  Scale it to fit the width of the game (the original sprite is 400x32 in size)
       ground.scale.setTo(2, 2);
@@ -27,7 +25,7 @@ class Play extends Phaser.State {
       ground.body.immovable = true;
 
       //  Now let's create two ledges
-      var ledge = platforms.create(400, 400, 'ground');
+      let ledge = platforms.create(400, 400, 'ground');
       ledge.body.immovable = true;
 
       ledge = platforms.create(-150, 250, 'ground');
