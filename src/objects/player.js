@@ -24,12 +24,12 @@ class Player extends Phaser.Sprite {
                 break;
             case 'left':
                 //  Move to the left
-                this.body.velocity.x = -250;
+                this.body.velocity.x = -450;
                 this.animations.play('left');
                 break;
             case 'right':
                 //  Move to the right
-                this.body.velocity.x = 250;
+                this.body.velocity.x = 450;
                 this.animations.play('right');
                 break;
         }

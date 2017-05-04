@@ -3,12 +3,15 @@ import Platforms from './../objects/platform';
 var player;
 var platforms;
 var cursors;
+var music;
 class Play extends Phaser.State {
 
   create() {
       //  We're going to be using physics, so enable the Arcade Physics system
       this.game.physics.startSystem(Phaser.Physics.ARCADE);
 
+      music = this.game.add.audio('bg-music');
+      music.play();
       //  A simple background for our game
       this.game.add.sprite(0, 0, 'sky');
 
